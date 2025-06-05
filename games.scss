@@ -16,17 +16,17 @@ a {
     text-decoration: none;
 }
 
-.hero-wrapper {
+.hero {
     height: 800px;
     background-color: rgb(225, 255, 143);
     background-image: url(img/big-star.svg), url(img/Star_1.svg), url(img/Star_2.svg), url(img/Star_3.svg), url(img/Star_4.svg);
     background-repeat: no-repeat;
     background-position: right -488px top -333.46px, left 63px top 94px, left 156px top 69px, left 948px top 538px, left 1013px top 568px;
 
-    .hero {
+    &-main {
         padding-top: 196px;
 
-        &_title {
+        &__title {
 
             color: rgb(32, 32, 39);
             font-family: Montserrat;
@@ -37,7 +37,7 @@ a {
             margin-bottom: 24px;
         }
 
-        &_text {
+        &__text {
             color: rgb(32, 32, 39);
             font-family: Montserrat;
             font-size: 24px;
@@ -47,7 +47,7 @@ a {
             margin-bottom: 48px;
         }
 
-        &_form {
+        &__form {
 
             &-button {
                 color: rgb(255, 255, 255);
@@ -85,7 +85,7 @@ a {
     background-repeat: no-repeat;
     background-position: right -142.56px top 77px, left 27.97px top 770px, left 45.18px top 822px;
 
-    &_title {
+    &__title {
         padding-top: 94px;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
@@ -96,7 +96,7 @@ a {
         text-align: left;
     }
 
-    &_text {
+    &__text {
         padding-top: 24px;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
@@ -107,18 +107,18 @@ a {
         text-align: left;
     }
 
-    &_cart-wrapper {
+    &__cart-wrapper {
         margin-top: 72px;
         display: flex;
         gap: 32px;
     }
 
-    &_cart-pair {
+    &__cart-pair {
         height: 1056px;
         width: 378px;
     }
 
-    &_cart {
+    &__cart {
         margin-bottom: 32px;
         background-color: rgb(255, 255, 255);
         border-radius: 30px;
