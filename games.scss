@@ -2,3 +2,162 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-wrapper {
+    height: 800px;
+    background-color: rgb(225, 255, 143);
+    background-image: url(img/big-star.svg), url(img/Star_1.svg), url(img/Star_2.svg), url(img/Star_3.svg), url(img/Star_4.svg);
+    background-repeat: no-repeat;
+    background-position: right -488px top -333.46px, left 63px top 94px, left 156px top 69px, left 948px top 538px, left 1013px top 568px;
+
+    .hero {
+        padding-top: 196px;
+
+        &_title {
+
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        &_text {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            margin-bottom: 48px;
+        }
+
+        &_form {
+
+            &-button {
+                color: rgb(255, 255, 255);
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 141.69%;
+                text-align: center;
+                width: 247px;
+                height: 66px;
+                box-sizing: border-box;
+                border: 1px solid rgb(32, 32, 39);
+                border-radius: 60px;
+                background: rgb(32, 32, 39);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.25s;
+
+                &:hover {
+                    border: 1px solid rgb(0, 0, 0);
+                    background: white;
+                    color: rgb(0, 0, 0);
+
+                }
+            }
+        }
+    }
+}
+
+.about-games {
+    padding-bottom: 50px;
+    background-color: rgb(32, 32, 39);
+    background-image: url(img/Star-big-2.svg), url(img/star-2-1.svg), url(img/star-2-2.svg);
+    background-repeat: no-repeat;
+    background-position: right -142.56px top 77px, left 27.97px top 770px, left 45.18px top 822px;
+
+    &_title {
+        padding-top: 94px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &_text {
+        padding-top: 24px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &_cart-wrapper {
+        margin-top: 72px;
+        display: flex;
+        gap: 32px;
+    }
+
+    &_cart-pair {
+        height: 1056px;
+        width: 378px;
+    }
+
+    &_cart {
+        margin-bottom: 32px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.08);
+        }
+
+        &-name {
+            padding: 32px 32px 36px 32px;
+
+            &-text {
+                color: rgb(32, 32, 39);
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 110%;
+                letter-spacing: 0px;
+                text-align: left;
+                width: 108px;
+                height: 36px;
+                border-radius: 52.58px;
+                background: rgb(247, 247, 247);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-title {
+                margin-top: 16px;
+                color: rgb(32, 32, 39);
+                font-family: Montserrat;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+        }
+    }
+}
