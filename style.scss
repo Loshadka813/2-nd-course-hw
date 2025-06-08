@@ -38,6 +38,7 @@ a {
         }
 
         &__text {
+            max-width: 720px;
             color: rgb(32, 32, 39);
             font-family: Montserrat;
             font-size: 24px;
@@ -161,3 +162,5 @@ a {
         }
     }
 }
+
+@import 'mobile';
