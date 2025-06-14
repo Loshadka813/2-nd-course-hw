@@ -163,4 +163,100 @@ a {
     }
 }
 
+.mini-games {
+    background: rgb(32, 32, 39);
+    background-image: url(img/mini_1.svg), url(img/mini_2.svg), url(img/mini_3.svg), url(img/mini_4.svg);
+    background-repeat: no-repeat;
+    background-position: top 93px right 123.79px, top 126px right 44.91px, right 53px bottom 65px, right 150px bottom 45px;
+    padding-bottom: 144px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+
+    &__cart {
+        margin-bottom: 32px;
+        height: 500px;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-left {
+            padding: 48px 48px;
+        }
+
+        &-name {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 24px;
+        }
+
+        &-text {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 36px;
+        }
+
+        &-button {
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            width: 247px;
+            height: 66px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            transition: all 0.25s;
+
+            &:hover {
+                border: 1px solid rgb(0, 0, 0);
+                background: white;
+                color: rgb(0, 0, 0);
+            }
+        }
+
+    }
+}
+
+.footer {
+    background: rgb(189, 237, 53);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+
 @import 'mobile';
