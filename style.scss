@@ -1,3 +1,5 @@
+$color-background: rgb(32, 32, 39);
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +30,7 @@ a {
 
         &__title {
 
-            color: rgb(32, 32, 39);
+            color: $color-background;
             font-family: Montserrat;
             font-size: 64px;
             font-weight: 700;
@@ -39,7 +41,7 @@ a {
 
         &__text {
             max-width: 720px;
-            color: rgb(32, 32, 39);
+            color: $color-background;
             font-family: Montserrat;
             font-size: 24px;
             font-weight: 400;
@@ -60,9 +62,9 @@ a {
                 width: 247px;
                 height: 66px;
                 box-sizing: border-box;
-                border: 1px solid rgb(32, 32, 39);
+                border: 1px solid $color-background;
                 border-radius: 60px;
-                background: rgb(32, 32, 39);
+                background: $color-background;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -81,7 +83,7 @@ a {
 
 .about-games {
     padding-bottom: 50px;
-    background-color: rgb(32, 32, 39);
+    background-color: $color-background;
     background-image: url(img/Star-big-2.svg), url(img/star-2-1.svg), url(img/star-2-2.svg);
     background-repeat: no-repeat;
     background-position: right -142.56px top 77px, left 27.97px top 770px, left 45.18px top 822px;
@@ -133,7 +135,7 @@ a {
             padding: 32px 32px 36px 32px;
 
             &-text {
-                color: rgb(32, 32, 39);
+                color: $color-background;
                 font-family: Montserrat;
                 font-size: 16px;
                 font-weight: 500;
@@ -151,7 +153,7 @@ a {
 
             &-title {
                 margin-top: 16px;
-                color: rgb(32, 32, 39);
+                color: $color-background;
                 font-family: Montserrat;
                 font-size: 32px;
                 font-weight: 700;
@@ -164,7 +166,7 @@ a {
 }
 
 .mini-games {
-    background: rgb(32, 32, 39);
+    background: $color-background;
     background-image: url(img/mini_1.svg), url(img/mini_2.svg), url(img/mini_3.svg), url(img/mini_4.svg);
     background-repeat: no-repeat;
     background-position: top 93px right 123.79px, top 126px right 44.91px, right 53px bottom 65px, right 150px bottom 45px;
@@ -182,8 +184,13 @@ a {
         padding-bottom: 72px;
     }
 
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
     &__cart {
-        margin-bottom: 32px;
         height: 500px;
         border-radius: 30px;
         background-color: rgb(255, 255, 255);
@@ -196,7 +203,7 @@ a {
         }
 
         &-name {
-            color: rgb(32, 32, 39);
+            color: $color-background;
             font-family: Montserrat;
             font-size: 48px;
             font-weight: 700;
@@ -207,7 +214,7 @@ a {
         }
 
         &-text {
-            color: rgb(32, 32, 39);
+            color: $color-background;
             font-family: Montserrat;
             font-size: 24px;
             font-weight: 400;
@@ -219,7 +226,7 @@ a {
 
         &-button {
             border-radius: 60px;
-            background: rgb(32, 32, 39);
+            background: $color-background;
             width: 247px;
             height: 66px;
             color: rgb(255, 255, 255);
