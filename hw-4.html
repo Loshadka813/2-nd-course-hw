@@ -10,7 +10,7 @@
 <body>
 
     <script>
-        
+
         //Задание 1
         let a = 1;
         while (a <= 2) {
@@ -53,8 +53,9 @@
         console.log(n, num);
 
         //Задание 6
-        let day = Number(prompt('Введите число первой пятницы этого мусяца'));
-        for (day; day <= 31; day += 7) {
+        let day = Number(prompt('Введите число первой пятницы этого месяца'));
+
+        for (day; day <= 31 && day >= 1; day += 7) {
             console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
         }
     </script>
