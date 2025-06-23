@@ -29,17 +29,50 @@
                 margin-bottom: 36px;
             }
 
-            &__form {
+            &__button {
+                margin-bottom: 131px;
+                font-size: 16px;
+                width: 285px;
+                height: 55px;
 
-                &-button {
-                    font-size: 16px;
-                    width: 285px;
-                    height: 55px;
-
-                    &:hover {
-                        transform: none;
-                    }
+                &:hover {
+                    color: rgb(255, 255, 255);
+                    border: 1px solid $color-background;
+                    background: $color-background;
                 }
+
+            }
+        }
+
+
+        &-line-wrapper {
+            width: 3400px;
+        }
+
+        &-line {
+            height: 51px;
+            gap: 27.4px;
+
+            @keyframes line {
+                0% {
+                    transform: translateX(0);
+                }
+
+                50% {
+                    transform: translateX(-1700px);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+            &__text {
+                font-size: 16px;
+            }
+
+            &__img {
+                width: 19px;
             }
         }
     }
@@ -99,7 +132,9 @@
                 font-size: 16px;
 
                 &:hover {
-                    transform: none;
+                    color: rgb(255, 255, 255);
+                    border: 1px solid $color-background;
+                    background: $color-background;
                 }
             }
 

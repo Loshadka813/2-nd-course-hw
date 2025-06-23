@@ -12,6 +12,8 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+
 }
 
 .center {
@@ -55,40 +57,44 @@ a {
             margin-bottom: 48px;
         }
 
-        &__form {
+        &__button {
+            margin-bottom: 156px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            width: 247px;
+            height: 66px;
+            box-sizing: border-box;
+            border: 1px solid $color-background;
+            border-radius: 60px;
+            background: $color-background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.25s;
 
-            &-button {
-                margin-bottom: 156px;
-                color: rgb(255, 255, 255);
-                font-family: Montserrat;
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 141.69%;
-                text-align: center;
-                width: 247px;
-                height: 66px;
-                box-sizing: border-box;
-                border: 1px solid $color-background;
-                border-radius: 60px;
-                background: $color-background;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.25s;
+            &:hover {
+                border: 1px solid rgb(0, 0, 0);
+                background: white;
+                color: rgb(0, 0, 0);
 
-                &:hover {
-                    border: 1px solid rgb(0, 0, 0);
-                    background: white;
-                    color: rgb(0, 0, 0);
-
-                }
             }
         }
+
+    }
+
+
+    &-line-wrapper {
+        width: 6400px;
+        display: flex;
+        gap: 0px;
     }
 
     &-line {
         height: 90px;
-        width: 3200px;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.2);
         background: rgb(188, 236, 48);
@@ -96,7 +102,8 @@ a {
         align-items: center;
         justify-content: center;
         gap: 51px;
-        animation: 60s infinite alternate line;
+        animation: 120s infinite alternate line;
+
 
         @keyframes line {
             0% {
@@ -112,13 +119,13 @@ a {
             }
         }
 
+
         &__text {
             color: rgb(32, 32, 39);
             font-family: Montserrat;
             font-size: 30px;
             font-weight: 700;
             line-height: 110%;
-            letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
         }

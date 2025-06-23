@@ -19,23 +19,40 @@
             <p class="hero-main__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
                 <strong>«Поехали!»</strong> и <strong>приступай</strong>.
             </p>
-            <form action="#catalog" class="hero-main__form"><button class="hero-main__form-button">Поехали!</button>
+            <form action="#catalog"><button class="hero-main__button">Поехали!</button>
             </form>
         </div>
-        <div class="hero-line">
-            <h4 class="hero-line__text">Викторина</h4>
-            <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
-            <h4 class="hero-line__text">угадай число</h4>
-            <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
-            <h4 class="hero-line__text">Переверни текст</h4>
-            <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
-            <h4 class="hero-line__text">Простая арифметика</h4>
-            <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
-            <h4 class="hero-line__text">Камень, ножницы, бумага</h4>
-            <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
-            <h4 class="hero-line__text">Генератор случайных цветов</h4>
-            <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+        <div class="hero-line-wrapper">
+            <div class="hero-line">
+                <h4 class="hero-line__text">Викторина</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">угадай число</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Переверни текст</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Простая арифметика</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Камень, ножницы, бумага</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Генератор случайных цветов</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+            </div>
+            <div class="hero-line">
+                <h4 class="hero-line__text">Викторина</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">угадай число</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Переверни текст</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Простая арифметика</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Камень, ножницы, бумага</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+                <h4 class="hero-line__text">Генератор случайных цветов</h4>
+                <img class="hero-line__img" src="img/line-star.svg" alt="Звезда">
+            </div>
         </div>
+
     </section>
     <div id="catalog">
         <section class="about-games center">
@@ -113,7 +130,7 @@
                     <div class="mini-games__cart-left">
                         <h3 class="mini-games__cart-name">Угадай число</h3>
                         <p class="mini-games__cart-text">Попробуй угадать случайное <br>число от 1 до 100.</p>
-                        <form action="#"><button class="mini-games__cart-button">Играть!</button></form>
+                        <button class="mini-games__cart-button" onclick="guessNumber()">Играть!</button>
                     </div>
                     <div class="mini-games__cart-right">
                         <img class="mini-games__cart-img" src="img/mini-cart-1.svg" alt="">
@@ -178,6 +195,8 @@
     <section class="footer">
         <h6 class="footer__title">Все права защищены.</h6>
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

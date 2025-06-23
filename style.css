@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .center {
@@ -49,7 +50,7 @@ a {
   text-align: left;
   margin-bottom: 48px;
 }
-.hero-main__form-button {
+.hero-main__button {
   margin-bottom: 156px;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
@@ -68,14 +69,18 @@ a {
   align-items: center;
   transition: all 0.25s;
 }
-.hero-main__form-button:hover {
+.hero-main__button:hover {
   border: 1px solid rgb(0, 0, 0);
   background: white;
   color: rgb(0, 0, 0);
 }
+.hero-line-wrapper {
+  width: 6400px;
+  display: flex;
+  gap: 0px;
+}
 .hero-line {
   height: 90px;
-  width: 3200px;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgb(188, 236, 48);
@@ -83,7 +88,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 51px;
-  animation: 60s infinite alternate line;
+  animation: 120s infinite alternate line;
 }
 @keyframes line {
   0% {
@@ -102,7 +107,6 @@ a {
   font-size: 30px;
   font-weight: 700;
   line-height: 110%;
-  letter-spacing: 4%;
   text-align: left;
   text-transform: uppercase;
 }
@@ -305,13 +309,40 @@ a {
     text-align: center;
     margin-bottom: 36px;
   }
-  .hero-main__form-button {
+  .hero-main__button {
+    margin-bottom: 131px;
     font-size: 16px;
     width: 285px;
     height: 55px;
   }
-  .hero-main__form-button:hover {
-    transform: none;
+  .hero-main__button:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(32, 32, 39);
+    background: rgb(32, 32, 39);
+  }
+  .hero-line-wrapper {
+    width: 3400px;
+  }
+  .hero-line {
+    height: 51px;
+    gap: 27.4px;
+  }
+  @keyframes line {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-1700px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hero-line__text {
+    font-size: 16px;
+  }
+  .hero-line__img {
+    width: 19px;
   }
   .about-games {
     display: none;
@@ -360,7 +391,9 @@ a {
     font-size: 16px;
   }
   .mini-games__cart-button:hover {
-    transform: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(32, 32, 39);
+    background: rgb(32, 32, 39);
   }
   .mini-games__cart-img {
     width: 343px;
