@@ -22,7 +22,7 @@ a {
 }
 
 .hero {
-  height: 800px;
+  height: 710px;
   background-color: rgb(225, 255, 143);
   background-image: url(img/big-star.svg), url(img/Star_1.svg), url(img/Star_2.svg), url(img/Star_3.svg), url(img/Star_4.svg);
   background-repeat: no-repeat;
@@ -74,12 +74,14 @@ a {
   background: white;
   color: rgb(0, 0, 0);
 }
-.hero-line-wrapper {
+
+.line-wrapper {
   width: 6400px;
   display: flex;
   gap: 0px;
 }
-.hero-line {
+
+.line {
   height: 90px;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -101,7 +103,7 @@ a {
     transform: translateX(0);
   }
 }
-.hero-line__text {
+.line__text {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 30px;
@@ -110,7 +112,7 @@ a {
   text-align: left;
   text-transform: uppercase;
 }
-.hero-line__img {
+.line__img {
   height: 36px;
   width: 36px;
 }
@@ -149,7 +151,6 @@ a {
 }
 .about-games__cart-pair {
   height: 1056px;
-  width: 378px;
 }
 .about-games__cart {
   margin-bottom: 32px;
@@ -287,7 +288,7 @@ a {
     padding-right: 16px;
   }
   .hero {
-    height: 700px;
+    height: 649px;
     background-image: url(img/big-mob.svg), url(img/mob-1.svg), url(img/mob-2.svg), url(img/mob-3.svg), url(img/mob-4.svg);
     background-repeat: no-repeat;
     background-position: right -90px top -90px, left 37px top 97px, left 91px top 64px, right 86px top 557px, right 34px top 580px;
@@ -320,10 +321,10 @@ a {
     border: 1px solid rgb(32, 32, 39);
     background: rgb(32, 32, 39);
   }
-  .hero-line-wrapper {
+  .line-wrapper {
     width: 3400px;
   }
-  .hero-line {
+  .line {
     height: 51px;
     gap: 27.4px;
   }
@@ -338,10 +339,10 @@ a {
       transform: translateX(0);
     }
   }
-  .hero-line__text {
+  .line__text {
     font-size: 16px;
   }
-  .hero-line__img {
+  .line__img {
     width: 19px;
   }
   .about-games {

@@ -26,7 +26,7 @@ a {
 }
 
 .hero {
-    height: 800px;
+    height: 710px;
     background-color: rgb(225, 255, 143);
     background-image: url(img/big-star.svg), url(img/Star_1.svg), url(img/Star_2.svg), url(img/Star_3.svg), url(img/Star_4.svg);
     background-repeat: no-repeat;
@@ -85,55 +85,54 @@ a {
         }
 
     }
+}
+
+.line-wrapper {
+    width: 6400px;
+    display: flex;
+    gap: 0px;
+}
+
+.line {
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgb(188, 236, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 51px;
+    animation: 120s infinite alternate line;
 
 
-    &-line-wrapper {
-        width: 6400px;
-        display: flex;
-        gap: 0px;
+    @keyframes line {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-3200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    &-line {
-        height: 90px;
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgb(188, 236, 48);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 51px;
-        animation: 120s infinite alternate line;
 
+    &__text {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        text-align: left;
+        text-transform: uppercase;
+    }
 
-        @keyframes line {
-            0% {
-                transform: translateX(0);
-            }
-
-            50% {
-                transform: translateX(-3200px);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-
-        &__text {
-            color: rgb(32, 32, 39);
-            font-family: Montserrat;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 110%;
-            text-align: left;
-            text-transform: uppercase;
-        }
-
-        &__img {
-            height: 36px;
-            width: 36px;
-        }
+    &__img {
+        height: 36px;
+        width: 36px;
     }
 }
 
@@ -174,7 +173,7 @@ a {
 
     &__cart-pair {
         height: 1056px;
-        width: 378px;
+
     }
 
     &__cart {
