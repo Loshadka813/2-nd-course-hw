@@ -168,12 +168,17 @@ a {
     &__cart-wrapper {
         margin-top: 72px;
         display: flex;
+        flex-wrap: wrap;
         gap: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     &__cart-pair {
+        max-width: 378px;
         height: 1056px;
-
+        display: grid;
+        grid-column: span 1;
     }
 
     &__cart {
@@ -184,6 +189,11 @@ a {
 
         &:hover {
             transform: scale(1.08);
+        }
+
+        &-img {
+            max-width: 100%;
+            height: auto;
         }
 
         &-name {
@@ -252,6 +262,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-shrink: 1;
 
         &-left {
             padding: 48px 48px;
