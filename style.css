@@ -17,6 +17,10 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
