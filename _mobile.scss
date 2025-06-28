@@ -5,7 +5,7 @@
     }
 
     .hero {
-        height: 649px;
+        height: 700px;
         background-image: url(img/big-mob.svg), url(img/mob-1.svg), url(img/mob-2.svg), url(img/mob-3.svg), url(img/mob-4.svg);
         background-repeat: no-repeat;
         background-position: right -90px top -90px, left 37px top 97px, left 91px top 64px, right 86px top 557px, right 34px top 580px;
@@ -29,50 +29,21 @@
                 margin-bottom: 36px;
             }
 
-            &__button {
-                font-size: 16px;
-                width: 285px;
-                height: 55px;
+            &__form {
 
-                &:hover {
-                    color: rgb(255, 255, 255);
-                    border: 1px solid $color-background;
-                    background: $color-background;
+                &-button {
+                    font-size: 16px;
+                    width: 285px;
+                    height: 55px;
+
+                    &:hover {
+                        transform: none;
+                    }
                 }
-
             }
         }
     }
 
-    .line-wrapper {
-        height: 51px;
-    }
-
-    .line {
-        gap: 27.4px;
-
-        @keyframes line {
-            0% {
-                transform: translateX(0);
-            }
-
-            50% {
-                transform: translateX(-1700px);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        &__text {
-            font-size: 16px;
-        }
-
-        &__img {
-            width: 19px;
-        }
-    }
 
     .about-games {
         display: none;
@@ -128,9 +99,7 @@
                 font-size: 16px;
 
                 &:hover {
-                    color: rgb(255, 255, 255);
-                    border: 1px solid $color-background;
-                    background: $color-background;
+                    transform: none;
                 }
             }
 
