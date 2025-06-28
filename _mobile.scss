@@ -45,11 +45,10 @@
     }
 
     .line-wrapper {
-        width: 3400px;
+        height: 51px;
     }
 
     .line {
-        height: 51px;
         gap: 27.4px;
 
         @keyframes line {
