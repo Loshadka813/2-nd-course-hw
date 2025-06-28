@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Задание 1
+        function min(a, b) {
+            if (a < b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+
+        console.log(min(prompt('Введите перое число'), prompt('Введите второе число')));
+
+        //Задание 2
+        function isEven(number) {
+            if (number % 2 === 0) {
+                return ('Число четное');
+            } else {
+                return ('Число нечетное');
+            }
+        }
+
+        console.log(isEven(prompt('Введите число')));
+
+        //Задание 3
+        // 3.1
+        let square1 = (x) => console.log(x ** 2);
+
+        square1(6);
+
+        //3.2
+        let square2 = (y) => {
+            let result = y ** 2;
+            return result;
+        }
+
+        console.log(square2(7));
+
+        //Задание 4
+        function user(age) {
+            if (age < 0) {
+                console.log('Вы ввели неправильное значение');
+            } else {
+                if (age >= 0 && age <= 12) {
+                    console.log('Привет, друг!');
+                } else {
+                    console.log('Добро пожаловать!');
+                }
+            }
+        }
+
+        user(prompt('Сколько Вам лет?'));
+
+        //Задание 5
+        function check(c, d) {
+            if (isNaN(c) || isNaN(d)) {
+                return ('Одно или оба значения не являются числом');
+            }
+            return c * d;
+        }
+
+        console.log(check("yt", 7));
+        console.log(check(5, 5));
+
+        //Задание 6
+        function checkNumb(n) {
+            if (isNaN(n)) {
+                return ('Переданный параметр не является числом');
+            }
+            let squareN = n ** 2;
+            return n + " в кубе равняется " + squareN;
+        }
+
+        let n = 0;
+        while (n <= 10) {
+            console.log(checkNumb(n));
+            n++;
+        }
+
+        //Задание 7
+        function getArea() {
+            let area = 3.14 * this.radius ** 2;
+            return area;
+        }
+
+        function getRerimeter() {
+            let perimeter = 2 * 3.14 * this.radius;
+            return perimeter;
+        }
+
+        const circle1 = {
+            radius: 4,
+            area: getArea,
+            perimeter: getRerimeter
+        }
+
+        const circle2 = {
+            radius: 6,
+            area: getArea,
+            perimeter: getRerimeter
+        }
+
+        console.log(circle1.area());
+        console.log(circle2.area());
+        console.log(circle1.perimeter());
+        console.log(circle2.perimeter());
+    </script>
+</body>
+
+</html>

@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .center {
@@ -16,12 +17,16 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
 
 .hero {
-  height: 800px;
+  height: 710px;
   background-color: rgb(225, 255, 143);
   background-image: url(img/big-star.svg), url(img/Star_1.svg), url(img/Star_2.svg), url(img/Star_3.svg), url(img/Star_4.svg);
   background-repeat: no-repeat;
@@ -49,8 +54,7 @@ a {
   text-align: left;
   margin-bottom: 48px;
 }
-.hero-main__form-button {
-  margin-bottom: 156px;
+.hero-main__button {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 24px;
@@ -68,45 +72,51 @@ a {
   align-items: center;
   transition: all 0.25s;
 }
-.hero-main__form-button:hover {
+.hero-main__button:hover {
   border: 1px solid rgb(0, 0, 0);
   background: white;
   color: rgb(0, 0, 0);
 }
-.hero-line {
+
+.line-wrapper {
+  overflow: hidden;
+  display: flex;
+  gap: 0px;
+  width: 100%;
   height: 90px;
-  width: 3200px;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
+  backdrop-filter: blur(50px);
+}
+
+.line {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 51px;
-  animation: 60s infinite alternate line;
+  white-space: nowrap;
+  will-change: transform;
+  animation: 20s infinite alternate line;
 }
 @keyframes line {
   0% {
     transform: translateX(0);
   }
-  50% {
-    transform: translateX(-3200px);
-  }
   100% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
-.hero-line__text {
+.line__text {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
   line-height: 110%;
-  letter-spacing: 4%;
   text-align: left;
   text-transform: uppercase;
 }
-.hero-line__img {
+.line__img {
   height: 36px;
   width: 36px;
 }
@@ -142,10 +152,14 @@ a {
   margin-top: 72px;
   display: flex;
   gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .about-games__cart-pair {
+  max-width: 378px;
   height: 1056px;
-  width: 378px;
+  display: grid;
+  grid-column: span 1;
 }
 .about-games__cart {
   margin-bottom: 32px;
@@ -155,6 +169,10 @@ a {
 }
 .about-games__cart:hover {
   transform: scale(1.08);
+}
+.about-games__cart-img {
+  max-width: 100%;
+  height: auto;
 }
 .about-games__cart-name {
   padding: 32px 32px 36px 32px;
@@ -216,6 +234,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-shrink: 1;
 }
 .mini-games__cart-left {
   padding: 48px 48px;
@@ -283,7 +302,7 @@ a {
     padding-right: 16px;
   }
   .hero {
-    height: 700px;
+    height: 649px;
     background-image: url(img/big-mob.svg), url(img/mob-1.svg), url(img/mob-2.svg), url(img/mob-3.svg), url(img/mob-4.svg);
     background-repeat: no-repeat;
     background-position: right -90px top -90px, left 37px top 97px, left 91px top 64px, right 86px top 557px, right 34px top 580px;
@@ -305,13 +324,38 @@ a {
     text-align: center;
     margin-bottom: 36px;
   }
-  .hero-main__form-button {
+  .hero-main__button {
     font-size: 16px;
     width: 285px;
     height: 55px;
   }
-  .hero-main__form-button:hover {
-    transform: none;
+  .hero-main__button:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(32, 32, 39);
+    background: rgb(32, 32, 39);
+  }
+  .line-wrapper {
+    height: 51px;
+  }
+  .line {
+    gap: 27.4px;
+  }
+  @keyframes line {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-1700px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .line__text {
+    font-size: 16px;
+  }
+  .line__img {
+    width: 19px;
   }
   .about-games {
     display: none;
@@ -360,7 +404,9 @@ a {
     font-size: 16px;
   }
   .mini-games__cart-button:hover {
-    transform: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(32, 32, 39);
+    background: rgb(32, 32, 39);
   }
   .mini-games__cart-img {
     width: 343px;
