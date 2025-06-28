@@ -32,6 +32,7 @@ function guessNumber() {
 }
 
 
+
 function arithmetic() {
     const num1 = Math.floor(Math.random() * 20) + 1;
     const num2 = Math.floor(Math.random() * 20) + 1;
