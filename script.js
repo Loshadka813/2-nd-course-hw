@@ -83,3 +83,52 @@ function arithmetic() {
 }
 
 
+function turnTheTextOver() {
+    let line = prompt('Введите текст');
+    let reverseLine = line.split('').reverse().join('');
+    alert(`${reverseLine}`);
+}
+
+const quiz = [
+    {
+        question: "Какого цвета небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+
+function quizGame() {
+    let correctCount = 0;
+    for (let i = 0; i < quiz.length; i++) {
+        const userAnswer = prompt(`${quiz[i].question}\n\n${quiz[i].options.join("\n")}`);
+
+        if (userAnswer === null) {
+            alert('Игра завершена.');
+            return;
+        }
+
+        const answerNumber = parseInt(userAnswer);
+        if (isNaN(answerNumber)) {
+            alert('Введите число.');
+            continue;
+        }
+        if (answerNumber === quiz[i].correctAnswer) {
+            correctCount++;
+            alert('Правильно!')
+        } else {
+            alert(`Не правильно! Правильный ответ: ${quiz[i].correctAnswer}`)
+        }
+    }
+    alert(`Вы ответили верно на ${correctCount} вопросов`);
+}
+
