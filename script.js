@@ -132,3 +132,36 @@ function quizGame() {
     alert(`Вы ответили верно на ${correctCount} вопросов`);
 }
 
+function rockPaperScissors(callback) {
+    const userAnswer = prompt(`Выберите:\n\nКамень, ножницы или бумага?`);
+    if (userAnswer === null) {
+        alert('Игра завершена');
+        return;
+    }
+
+    const options = ["камень", "ножницы", "бумага"];
+    const option = options[Math.floor(Math.random() * options.length)];
+
+    alert(`Ваш выбор - ${userAnswer}\n\nВыбор компьтера - ${option}`)
+
+    if (
+        (option === "камень" && userAnswer.toLocaleLowerCase() === "камень") ||
+        (option === "ножницы" && userAnswer.toLocaleLowerCase() === "ножницы") ||
+        (option === "бумага" && userAnswer.toLocaleLowerCase() === "бумага")) {
+        alert('Ничья')
+    } else if (
+        (option === "камень" && userAnswer.toLocaleLowerCase() === "бумага") ||
+        (option === "бумага" && userAnswer.toLocaleLowerCase() === "ножницы") ||
+        (option === "ножницы" && userAnswer.toLocaleLowerCase() === "камень")) {
+        alert('Вы выграли!')
+    } else if (
+        (option === 'камень' && userAnswer.toLocaleLowerCase() === 'ножницы') ||
+        (option === 'бумага' && userAnswer.toLocaleLowerCase() === 'камень') ||
+        (option === 'ножницы' && userAnswer.toLocaleLowerCase() === 'бумага')
+    ) {
+        alert('Вы проиграли!');
+    } else {
+        alert('Ошибка: Вы ввели неправильное слово.');
+    }
+}
+
