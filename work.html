@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 1
+        const filterAndMap = (array, callback) => {
+            console.log(array.filter(callback).map(num => num * 2));
+        };
+
+        const numbers = [1, 2, 3, 4, 5];
+        const isEven = (num) => num % 2 === 0;
+        filterAndMap(numbers, isEven);
+
+        //2
+        const getTotalScore = (arr) => {
+            const sum = arr.reduce((total, number) => total + number.score, 0);
+            console.log(sum);
+        };
+
+        const students = [
+            { name: "Alise", score: 50 },
+            { name: "Bob", score: 70 },
+            { name: "Charli", score: 80 }
+        ];
+        getTotalScore(students);
+    </script>
+</body>
+
+</html>
