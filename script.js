@@ -132,7 +132,7 @@ function quizGame() {
     alert(`Вы ответили верно на ${correctCount} вопросов`);
 }
 
-function rockPaperScissors(callback) {
+function rockPaperScissors() {
     const userAnswer = prompt(`Выберите:\n\nКамень, ножницы или бумага?`);
     if (userAnswer === null) {
         alert('Игра завершена');
@@ -164,4 +164,18 @@ function rockPaperScissors(callback) {
         alert('Ошибка: Вы ввели неправильное слово.');
     }
 }
+
+
+function randomColorGenerator() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const backgroundEl = document.querySelectorAll('.about-games, .mini-games');
+
+    backgroundEl.forEach(el => {
+        el.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    })
+}
+
+
 

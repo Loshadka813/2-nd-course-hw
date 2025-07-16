@@ -234,7 +234,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-shrink: 1;
 }
 .mini-games__cart-left {
   padding: 48px 48px;
@@ -417,6 +416,15 @@ a {
   .footer__title {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+@media (max-width: 343px) {
+  .mini-games__cart {
+    width: 100%;
+  }
+  .mini-games__cart-img {
+    max-width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 1024px) {
