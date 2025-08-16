@@ -234,7 +234,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-shrink: 1;
 }
 .mini-games__cart-left {
   padding: 48px 48px;
@@ -296,6 +295,15 @@ a {
   text-align: center;
 }
 
+@media (max-width: 343px) {
+  .mini-games__cart {
+    width: 100%;
+  }
+  .mini-games__cart-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -409,7 +417,7 @@ a {
     background: rgb(32, 32, 39);
   }
   .mini-games__cart-img {
-    width: 343px;
+    max-width: 343px;
   }
   .footer {
     height: 100px;
@@ -476,6 +484,6 @@ a {
     transform: none;
   }
   .mini-games__cart-img {
-    width: 343px;
+    max-width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */
